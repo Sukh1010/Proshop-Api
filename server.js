@@ -12,10 +12,10 @@ import orders from "./routes/OrderRoute.js";
 import dotenv from "dotenv";
 dotenv.config();
 
+app.use(cors());
 connectDB();
 const app = express();
 app.use(express.json());
-app.use(cors());
 
 app.use("/api/products", products);
 app.use("/api/users", users);
