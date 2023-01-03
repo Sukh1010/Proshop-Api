@@ -8,13 +8,13 @@ import errorHandler from "./middlewares/errorHandler.js";
 import notFound from "./middlewares/errorHandler.js";
 import carts from "./routes/CartRoute.js";
 import orders from "./routes/OrderRoute.js";
+const app = express();
 
 import dotenv from "dotenv";
 dotenv.config();
 
 app.use(cors());
 connectDB();
-const app = express();
 app.use(express.json());
 
 app.use("/api/products", products);
