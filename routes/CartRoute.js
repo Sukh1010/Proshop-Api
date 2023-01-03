@@ -7,7 +7,7 @@ import {
   updateQty,
   clearCart,
 } from "../controller/CartController.js";
-import { adminAuth } from "../middlewares/authMiddleware.js";
+// import { adminAuth } from "../middlewares/authMiddleware.js";
 const routes = Router();
 
 routes.get("/:user", getUserCart);
